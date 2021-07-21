@@ -1,0 +1,448 @@
+*{
+	box-sizing:border-box;
+	font-family: 'Varela Round', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        bottom:0px;
+		text-decoration: none;
+      }
+
+
+      .mySlides {
+            display: none;
+        }
+
+	.topnav #myLinks {
+  	  display: none;
+	}	
+	
+	.topnav {
+ 	 overflow: hidden;
+  	 background-color: #333;
+  	 position: relative;
+	}
+
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            top:-15px;
+        }
+
+       .slideshowIMG{
+           width:100%;
+           height: 20%;
+
+       }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom:3px;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2.5s;
+            animation-name: fade;
+            animation-duration: 2.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+	
+      [class*="col-"] {
+          float: left;
+          padding: 15px;
+	/*border: 1px solid red; */
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+		/* scroll bar */
+		/* width */
+		::-webkit-scrollbar {
+			width: 12px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #f1f1f1; 
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: green; 
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #66ff66; 
+		}
+
+		ul{
+		list-style-type:none;
+		margin:auto;
+		}
+		
+		li{
+		float:right;
+		width:80px;
+        margin-left:33px;
+		}
+
+		nav {
+		text-align: center;
+		background-repeat: no-repeat;
+		}
+		
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+	}
+		.menulinks{
+		background-color: green;
+		text-decoration:none;
+		color:white;
+		display:inline-block;
+		width:120%;
+		font-size:17px;
+		text-align:center;
+        border-radius:20px;
+        padding:2px;
+		margin-bottom:2px;
+   		margin-top:12px;
+		}
+		
+		.menulinks:hover{
+		background-color:#66ff66;
+        	font-size:110%;
+       		color:#606060;
+		}
+		
+		
+		#logo{
+		width:6%;
+        height:6%;
+        float:right;
+        position:relative;
+        margin-left:190px;
+		}
+		
+		#logoAndHead{
+		clear:both;
+		font-size:25px;
+		text-align:center;
+		margin:auto;
+		margin-top:0px;
+		}
+		
+	  .footer{
+		text-decoration:none;
+		color:black;
+		display:inline-block;
+		font-size:14px;
+		text-align:center;
+        border-radius:0px;
+       	 padding:2px;
+		font-weight:bold;
+		}
+		
+		.footer{
+		font-size:15px;
+		text-align:center;
+		display:block;
+		margin:auto;	
+		}
+
+	 
+		.footerr:hover {
+		background-color: green;
+		color:white;
+		font-size:110%;}
+		
+		footer{
+			background-color: hsl(120, 100%, 70%);
+			text-align:center;
+			margin:auto;
+			position: relative;
+		   left: 0;
+		   height:150%;
+		   bottom: 0;
+		   width: 100%;
+		}
+
+        #upicon{
+            width:51px;
+            height:42px;
+            border-radius:10px;
+            opacity:0;
+                
+            position:fixed;
+            bottom:5px;
+            right:5px;
+            cursor:pointer;
+        }
+   
+
+ 	#navbar{
+	padding:1px 1px;
+	border-radius:3px;
+	margin:5px 15px 5px 5px;		
+	}
+	
+nav{
+display:block;
+}
+	
+
+    .hamburger{
+	  display:none;
+  	  width: 20px;
+  	  height: 3px;
+   	 background-color: green;
+   	 margin: 2px;
+	}
+  
+	
+
+	@media only screen and (max-width: 1000px) {
+	    #logo{float:left;}
+    	    aside{display:none;}
+	    li{clear:both;
+	    position:relative;
+	    margin:auto;}
+	    .hamburger{display:block;}
+	      #navbar{display:none;}
+	    #logo{float:left; margin-left:0;}
+	    #intro{width:100%}
+	    #info{display:none;}
+
+		.icon{
+	           display:none;
+               float:left;
+        	 }
+	}
+	
+	@media only screen and (min-width: 680px){
+    .icon2{
+               display:none;
+               float:left;
+           }
+	}
+		   
+		   
+	@media only screen and (max-width: 1000px) 
+	{
+	#logo{float:left; margin-left:0;}
+        aside{display:none;}
+	#fbContainer{display:none;}
+	#description{width:100%}
+	//#navbar{display:block;}
+	
+	mapouter{float:right;width=col2}
+	menulinks{float:right;position:absolute;margin: 0;}
+	
+	}
+
+     .frameEmbadding{
+            flex-grow:1;
+            margin:0;
+            padding:0;
+            border:0;
+            width:100%;
+        }
+
+   p{
+	   text-align:center;
+	   letter-spacing: 1px;
+	   word-spacing: 2px;
+	   white-space: pre;
+	font-size:14px;
+   }
+
+    #accessability{
+                height:50px;
+                width:50px;
+                position:fixed;
+		z-index:100;
+                border-radius:10px;
+                opacity:1;
+		display:none;
+                right:2px;
+                top:40px;
+            }
+			
+
+            .mapouter {
+                text-align: right;
+                height: 400px;
+                max-width: 400px;
+				position: relative;
+				margin: auto;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                max-height: 350px;
+                max-width: 700px;
+            }
+
+		.icon{
+		width:40px;
+		height:40px;
+		margin:2px;
+		}
+		
+		.icon3{
+		width:60px;
+		height:60px;
+		margin:2px;
+		}
+		
+		img.icon2 {
+		height: 60px;
+		width: 60px;
+		padding: 5px;
+		}
+		
+        img {
+            vertical-align: middle;
+                height: 130px;
+                width:150px;
+				padding: 5px;
+            }
+			
+			
+     /*------ HugRegistration ------*/
+
+        .Hug{
+            display: block;
+            width: 75%;
+            margin:auto;
+        } 
+
+        .hugContainer{
+            float:right;
+            position:relative;
+            right:25%;
+            border: 3px solid green;
+            border-radius:10px;
+            margin-left:15px;
+            text-align:center;
+            box-shadow:rbga(0,0,0,0.4) 3px 3px 3px 3px;
+			cursor: pointer;
+        }
+        
+    
+        .hugContainer:hover{
+             border: 3px dotted #66ff66;
+             box-shadow: rgb(202,245,245) 3px 3px 3px 3px  ;
+             font-weight:bold;
+        }
+		
+		 /*------ fault ------*/
+		 
+		#form{
+			display: block;
+			width: 40%;
+			padding: 6px 12px;
+			font-size: 17px;
+			line-height: 1.45;
+			color: rgb(64,81,102,75);
+			background-color: #fff;
+			border: 1px solid;
+			border-radius: 3px;
+			margin:auto;}
+			
+		.fault_txtarea{
+			width:40%;
+			text-align:center;
+			font-size:15px;
+			font-style:italic;
+			color:green;
+			}
+			
+		.contact{
+			color:red;
+		    font-weight:bold;
+		}
+		input{
+		    padding:10px;
+		    text-align:center;
+		    font-weight:bold;
+		    color:green;
+		    font-size:20px;
+		}
+			
+			#validation_response{
+			    color:red;
+			    font-weight:bold;
+			    font-size:15px;
+			    text-align:center;
+			    margin:auto;
+			    border:3px solid red;
+			    border-radius:10px;
+			    display:inline-block;
+			    cursor:pointer;
+			    position:relative;
+			    margin:auto;
+			    padding:3px;
+			    
+			}
+			
+			.user_msg{
+			    color:#008000;
+			    text-align:center;
+			}
+	
+		 
+ /*------ Registration ------*/
+	
