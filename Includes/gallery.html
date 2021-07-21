@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <title>גלריה</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    
+    <script>
+                window.onscroll = function() {TopButton()};
+
+       function TopButton() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+               
+                document.getElementById("upicon").style.opacity = 0.6;
+				document.getElementById("accessability").style.display="block";
+            }
+
+            else{
+			document.getElementById("upicon").style.opacity = 0;
+            document.getElementById("accessability").style.display="none";
+			}
+        }
+
+    </script>
+</head>
+
+<body dir="rtl">
+
+<iframe src="header.html"  class="frameEmbadding" scrolling="no"></iframe> 
+
+    <main>
+	
+        <main class="col-12">
+
+            <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/1.jpg" class="slideshowIMG"/>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/3.jpg" class="slideshowIMG" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/2.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/4.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/5.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/6.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/7.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/8.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/9.jpg" class="slideshowIMG" />
+        </div>
+		
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+	
+    </main>       
+<br><br><br>
+
+  <a href="#top"> <img id="upicon" title="חזרה לראש הדף" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.6"  src="CSS/pics/up.png" ></a>
+   <iframe src="footer.html"  class="frameEmbadding" scrolling="no"></iframe> 
+
+</body>
+</html>
+

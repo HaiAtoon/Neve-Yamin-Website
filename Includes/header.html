@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>רישום לחוג</title>
+
+</head>
+	<body dir="rtl">
+
+	<header class="col-12">
+            <a href="index.html"><img id="logo" src="CSS\pics\logo.png" /></a>
+
+			<a href="#" onclick="window.alert('כפתור הדמיה, אין תפריט נגישות');"><img src="pics/Accessibility-icon.png" title="גלישה נגישה" id="accessability" /></a>
+				
+			<script>
+                function menuFunction() {
+                    var x = document.getElementById("navbar");
+					  if (x.style.display === "block") {
+					      x.style.display="none";
+					  } else {
+					      x.style.display = "block";
+						
+					  }
+					}
+
+					function menuResize()
+					{
+					    if (window.outerWidth > 1300)
+					        document.getElementById("navbar").style.display = "block";
+                        else
+					        document.getElementById("navbar").style.display = "none";
+					}
+					
+					</script>
+								
+            <a href="#" onclick="menuFunction()">
+                <div class="hamburger"></div>
+			    <div class="hamburger"></div>
+			    <div class="hamburger"></div>
+            </a>
+
+				
+	      <nav id="navbar">
+		        <ul>
+			        <li><a class="menulinks" href="index.html" target="_blank">דף הבית</a></li>
+			        <li><a class="menulinks" href="#">אודות</a></li> 
+			        <li><a class="menulinks" href="HugRegistration.html" target="_blank">חוגים</a></li> 
+			        <li><a class="menulinks" href="#">שירותים </a></li> 
+			        <li><a class="menulinks" href ="#">עסקים</a></li> 
+			        <li><a class="menulinks" href="gallery.html" target="_blank">גלריה </a></li> 
+					<li><a class="menulinks" href="fault.php" target="_blank">צור קשר</a></li> 
+		        </ul>
+	        </nav>
+	    </header>
+</main>
+</body>
+</html>

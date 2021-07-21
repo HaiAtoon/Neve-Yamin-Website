@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<title>מושב נווה ימין</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+
+        <script language="javascript">
+        window.onscroll = function() {TopButton()};
+
+       function TopButton() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+               
+                document.getElementById("upicon").style.opacity = 0.6;
+				document.getElementById("accessability").style.display="block";
+            }
+
+            else{
+			document.getElementById("upicon").style.opacity = 0;
+            document.getElementById("accessability").style.display="none";
+			}
+        }
+        </script>
+  </head>
+
+	<body dir="rtl" onresize="menuResize()" >
+	<iframe src="header.html"  class="frameEmbadding" scrolling="no"></iframe> 
+
+        <!-- FB script+div -->
+       <div id="fb-root"></div>
+		<script>	
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v3.2';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+	    
+
+        <main class="col-12">
+
+            <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/1.jpg" class="slideshowIMG"/>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/3.jpg" class="slideshowIMG" />
+        </div>
+
+        <div class="mySlides fade">
+            <img src="CSS/slideshow/2.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/4.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/5.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/6.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/7.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/8.jpg" class="slideshowIMG" />
+        </div>
+		
+		<div class="mySlides fade">
+            <img src="CSS/slideshow/9.jpg" class="slideshowIMG" />
+        </div>
+		
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+	
+
+	
+	       <div id="logoAndHead" class="col-12" >
+               <h2 style="color:#008000; text-align:center; font-size:40px"><b>ברוכים הבאים לאתר של מושב נווה ימין </b></h2>
+           </div>
+
+            <aside class="col-2">
+                <iframe frameborder="0" scrolling="no" src="http://hakolhayehudi.co.il/newsflash" style="height: 100%; width: 100%;"></iframe>
+            </aside>
+
+            <div id="intro" class="col-7">
+			
+			<section style="text-align: center">
+			
+			נווה ימין (נְוֵה יָמִין) הוא מושב במחוז המרכז, בנפת פתח תקווה, אזור דרום השרון, ממזרח לכפר סבא. <br>
+			מקור השם הנו באתר נבי ימין המצוי בשולי המושב בסמוך לאזור התעשייה המזרחי של העיר כפר סבא. <br>
+			יש הרואים בו את מקום קבורותו של בנימין, צעיר בניו של יעקב. <br>
+			נווה ימין הוקם באוגוסט 1949 ומשתייך לתנועת המושבים,
+			המושב נוסד על ידי עולים מיוון לוב, עיראק, פרס וצפון אפריקה. <br>
+			המושב משתרע על פני כ-3,300 דונם,
+			ענפי המשק העיקריים במושב היו גידולי שדה, פרדס, אבוקדו, ירקות, לול, אווזים ודיר.
+			 </section>
+			 
+			 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			  $("#hide").click(function(){
+				$("section").hide();
+			  });
+			  $("#show").click(function(){
+				$("section").show();
+			  });
+			});
+			</script>
+			<center>
+			<button id="hide">צמצם</button>
+			<button id="show">הראה</button>
+			</center>
+			<br><br>
+			
+            <div class="gmap_canvas mapouter">
+                <iframe name="map" width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=%D7%9E%D7%95%D7%A9%D7%91%20%D7%A0%D7%95%D7%95%D7%94%20%D7%99%D7%9E%D7%99%D7%9F&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+			
+            </div>
+	
+		
+            <aside class="col-3">
+            		
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftalrb1972&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </aside>
+
+			
+        </main>
+
+          <a href="#top"> <img id="upicon" title="חזרה לראש הדף" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.6"  src="CSS/pics/up.png" ></a>
+          
+       
+
+         <iframe src="footer.html"  class="frameEmbadding" scrolling="no"></iframe> 
+	</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <title>חוגים במושב</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    
+    
+    <script>
+                window.onscroll = function() {TopButton()};
+
+       function TopButton() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+               
+                document.getElementById("upicon").style.opacity = 0.6;
+				document.getElementById("accessability").style.display="block";
+            }
+
+            else{
+			document.getElementById("upicon").style.opacity = 0;
+            document.getElementById("accessability").style.display="none";
+			}
+        }
+
+    </script>
+</head>
+
+<body dir="rtl">
+
+<iframe src="header.html"  class="frameEmbadding" scrolling="no"></iframe> 
+
+    <main>
+
+        <div class="col-12">
+            <h2 class="user_msg"><b> הרשמה לחוגים ופעילויות</b></h2><br>
+
+			<br><h2 class="user_msg">בחרו חוג</h2><br> 
+			
+            <div class="Hug">
+			<br><h3 class="user_msg">לילדים ונוער</h3>
+                <div class="hugContainer"><a href="Registration.php?hugID=101">
+                    <label>ג'ודו</label> <br />
+                    <img  src="CSS/hugPics/judo.jpg" /></a>
+                </div>
+
+                <div class="hugContainer"><a href="Registration.php?hugID=100">
+                    <label>פסנתר</label> <br />
+                    <img  src="CSS/hugPics/piano.jpeg" /></a>
+                </div>
+
+                <div class="hugContainer"><a href="Registration.php?hugID=102">
+                    <label>זומבה</label> <br />
+                    <img  src="CSS/hugPics/zumba.jpg" /></a>
+                </div>
+			
+            </div>
+         </div>
+		 
+		 
+		    <br> <div class="Hug">
+			<br><h3 class="user_msg">למבוגרים</h3>
+                <div class="hugContainer"><a href="Registration.php?hugID=103">
+                    <label>קבלה</label> <br />
+                    <img src="CSS/hugPics/kabala.png" /></a>
+                </div>
+
+                <div class="hugContainer"><a href="Registration.php?hugID=104">
+                    <label>ריקודי עם</label> <br />
+                    <img src="CSS/hugPics/amdance.jpg" /></a>
+                </div>
+
+                <div class="hugContainer"><a href="Registration.php?hugID=105">
+                    <label>נגרות</label> <br />
+                    <img  src="CSS/hugPics/carpentry.jpg" /></a>
+                </div>
+				<br><br>
+			
+			<br><br><br>
+            </div>
+			
+			<br><br><br>
+         
+		 <br>
+		  <div class="Hug">
+			<h3 class="user_msg">לכולם</h3>
+            <div class="hugContainer"><a href="Registration.php?hugID=106">
+			<label>רכיבה על סוסים</label> <br />
+			<iframe width="490" height="315" src="https://www.youtube.com/embed/QxdSYARq2P4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</a>
+			<br>
+            </div>
+            
+            <br><br><br>
+
+    </main>       
+<br><br><br>
+
+  <a href="#top"> <img id="upicon" title="חזרה לראש הדף" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.6"  src="CSS/pics/up.png" ></a>
+   <iframe src="footer.html"  class="frameEmbadding" scrolling="no"></iframe> 
+
+</body>
+</html>
+
